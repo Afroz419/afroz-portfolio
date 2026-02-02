@@ -75,7 +75,7 @@ const Home = () => {
                 <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-5xl font-bold shadow-xl">
-                      <img src='\public\images\me.png' alt='AA'/>
+                      <img src='/images/me.png' alt='AA'/>
                     </div>
                     
                   </div>
