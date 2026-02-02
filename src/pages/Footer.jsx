@@ -16,7 +16,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+    <footer className="bg-slate-50 text-black relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
@@ -32,7 +32,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
               Afroz Ansari
             </h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
+            <p className="text-black text-sm leading-relaxed">
               React Developer & UI/UX Enthusiast crafting beautiful digital experiences.
             </p>
             <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-full text-sm">
@@ -40,19 +40,19 @@ const Footer = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              <span className="text-slate-300">Available for work</span>
+              <span className="text-black">Available for work</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="text-center">
-            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.url}
-                    className="text-slate-400 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 transition-all duration-300 inline-block"
+                    className="text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-400 transition-all duration-300 inline-block"
                   >
                     {link.name}
                   </a>
@@ -63,7 +63,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="text-center md:text-right">
-            <h4 className="text-lg font-semibold mb-4 text-white">Connect With Me</h4>
+            <h4 className="text-lg font-semibold mb-4 text-black">Connect With Me</h4>
             <div className="flex justify-center md:justify-end gap-3">
               {socialLinks.map((social, index) => (
                 <a
@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            <p className="text-slate-400 text-sm mt-4">
+            <p className="text-black text-sm mt-4">
               Let's build something amazing together!
             </p>
           </div>
@@ -88,15 +88,15 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-400 text-sm">
-            © {new Date().getFullYear()} <span className="text-white font-medium">Afroz Ansari</span>. All Rights Reserved.
+          <p className="text-black text-sm">
+            © {new Date().getFullYear()} <span className="text-black font-medium">Afroz Ansari</span>. All Rights Reserved.
           </p>
           
-          <div className="flex items-center gap-6 text-sm text-slate-400">
+          <div className="flex items-center gap-6 text-sm text-black">
             <a href="#" className="hover:text-white transition-colors duration-300">
               Privacy Policy
             </a>
-            <span className="text-slate-700">•</span>
+            <span className="text-black">•</span>
             <a href="#" className="hover:text-white transition-colors duration-300">
               Terms of Service
             </a>
@@ -110,7 +110,7 @@ const Footer = () => {
           aria-label="Scroll to top"
         >
           <svg 
-            className="w-6 h-6 text-white transform group-hover:-translate-y-1 transition-transform duration-300" 
+            className="w-6 h-6 text-black transform group-hover:-translate-y-1 transition-transform duration-300" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"
