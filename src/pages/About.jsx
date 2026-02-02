@@ -15,35 +15,18 @@ const About = () => {
           {/* Image Side */}
           <div className="md:w-1/2 mb-10 md:mb-0" style={{ animation: 'fadeInLeft 0.8s ease-out' }}>
             <div className="relative group">
-              {/* Gradient border effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
               
-              {/* Image container */}
-              <div className="relative">
-                <img
-                  src="https://via.placeholder.com/400"
-                  alt="Profile"
-                  className="relative rounded-2xl shadow-2xl w-full transform group-hover:scale-[1.02] transition-transform duration-500"
-                />
-                
-                {/* Overlay gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-              </div>
-
-              {/* Floating stats cards */}
-              <div className="absolute -bottom-6 -right-6 bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-xl p-4 shadow-xl transform group-hover:translate-y-[-4px] transition-transform duration-300">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">3+</div>
-                  <div className="text-xs text-slate-400 mt-1">Years Experience</div>
-                </div>
-              </div>
-
-              <div className="absolute -top-6 -left-6 bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-xl p-4 shadow-xl transform group-hover:translate-y-[-4px] transition-transform duration-300">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400">20+</div>
-                  <div className="text-xs text-slate-400 mt-1">Projects Done</div>
-                </div>
-              </div>
+           {/* Image Side */}
+        <div className="md:w-1/2 mb-10 md:mb-0 animate-fadeLeft">
+          <div className="relative w-48 sm:w-80 h-48 sm:h-80 mx-auto rounded-full overflow-hidden border-4 border-white shadow-2xl">
+            <img
+              src="/images/me.png"
+              alt="Afroz Ansari"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>    
+              
             </div>
           </div>
 

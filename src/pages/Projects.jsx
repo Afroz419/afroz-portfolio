@@ -96,7 +96,7 @@ const Projects = () => {
                 </div>
 
                 {/* Button */}
-                <button className="group/btn relative w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-3 rounded-lg font-medium overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
+                <button className="group/btn relative w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white px-4 py-3 rounded-lg font-medium overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     View Project
                     <svg 

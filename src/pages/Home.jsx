@@ -52,7 +52,7 @@ const Home = () => {
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Hi, I'm
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-2">
+              <span className="block bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent mt-2">
                 Afroz Ansari
               </span>
             </h2>
@@ -108,7 +108,7 @@ const Home = () => {
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">
                 I am a
-                <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mt-2">
+                <span className="block bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent mt-2">
                   Developer
                 </span>
               </h2>
@@ -152,7 +152,7 @@ const Home = () => {
       </section>
 
       {/* Technology Scroll Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 py-12 mt-8 border-y border-gray-200">
+      <section className="relative overflow-hidden bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 py-8 mt-10 border-y border-gray-200">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
         <h3 className="text-center text-gray-500 font-semibold text-sm tracking-widest mb-8 uppercase">
@@ -166,7 +166,7 @@ const Home = () => {
                 key={index}
                 className="flex-shrink-0 mx-6 sm:mx-8 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <span className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent whitespace-nowrap opacity-80">
                   {tech}
                 </span>
               </div>
