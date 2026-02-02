@@ -60,27 +60,26 @@ const Home = () => {
               Crafting digital experiences with passion and precision
             </p>
 
+            <div className="flex justify-between">
+
             <button
               onClick={scrollToAbout}
-              className="group relative px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl border-2 border-blue-800 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
+              className="group relative px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl border-2 border-blue-700 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
-                About Me
-                <svg
-                  className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                50+ Projects
               </span>
             </button>
+
+            <button
+              onClick={scrollToAbout}
+              className="group relative px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl border-2 border-blue-700 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                2+ Experience
+              </span>
+            </button>
+            </div>
           </div>
 
           {/* Center Column - Profile Image */}
@@ -118,75 +117,42 @@ const Home = () => {
               </p>
             </div>
 
+            <div className="flex justify-between">
+
             <button
               onClick={scrollToProjects}
               className="group relative px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl border-2 border-blue-600 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
-                View Projects
-                <svg
-                  className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                100% Satisfaction
               </span>
               <div className="absolute inset-0 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               <span className="absolute inset-0 flex items-center justify-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                View Projects
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                100% Satisfaction
+              </span>
+            </button>
+
+            <button
+              onClick={scrollToProjects}
+              className="group relative px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl border-2 border-blue-600 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                24/7 Support
+              </span>
+              <div className="absolute inset-0 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <span className="absolute inset-0 flex items-center justify-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                24/7 Support
               </span>
             </button>
           </div>
+
+          </div>
         </div>
 
-        {/* Stats or Features Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
-          {[
-            { number: "50+", label: "Projects Completed" },
-            { number: "3+", label: "Years Experience" },
-            { number: "100%", label: "Client Satisfaction" },
-            { number: "24/7", label: "Support Available" },
-          ].map((stat, index) => (
-            <div
-              key={index}
-              className={`text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 transform ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-              style={{ transitionDelay: `${800 + index * 100}ms` }}
-            >
-              <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {stat.number}
-              </h3>
-              <p className="text-gray-600 mt-2 font-medium">{stat.label}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* Technology Scroll Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 py-12 mt-16 border-y border-gray-200">
+      <section className="relative overflow-hidden bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50 py-12 mt-8 border-y border-gray-200">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
         <h3 className="text-center text-gray-500 font-semibold text-sm tracking-widest mb-8 uppercase">
