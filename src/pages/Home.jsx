@@ -62,7 +62,7 @@ const Home = () => {
 
             <button
               onClick={scrollToAbout}
-              className="group relative px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl border-2 border-blue-600 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
+              className="group relative px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl border-2 border-blue-800 overflow-hidden shadow-lg hover:shadow-xl hover:text-white transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
                 About Me
