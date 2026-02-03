@@ -1,11 +1,12 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const socialLinks = [
-    { name: "GitHub", icon: "💻", url: "#" },
-    { name: "LinkedIn", icon: "💼", url: "#" },
-    { name: "Twitter", icon: "🐦", url: "#" },
-    { name: "Email", icon: "📧", url: "mailto:afroz@example.com" }
+    { name: "GitHub", icon: <FaGithub/>, url: "#" },
+    { name: "LinkedIn", icon: <FaLinkedin />, url: "#" },
+    { name: "WhatsApp", icon: <FaWhatsapp />, url: "#" },
+    { name: "Email", icon: <FaEnvelope />, url: "mailto:afroz@example.com" }
   ];
 
   const quickLinks = [
@@ -69,7 +70,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.url}
-                  className="group relative w-12 h-12 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
+                  className="group relative w-12 h-12 hover:bg-slate-300 border border-slate-700 hover:border-slate-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20"
                   title={social.name}
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform duration-300">
@@ -93,11 +94,11 @@ const Footer = () => {
           </p>
           
           <div className="flex items-center gap-6 text-sm text-black">
-            <a href="#" className="hover:text-white transition-colors duration-300">
+            <a href="#" className="hover:text-blue-600 transition-colors duration-300">
               Privacy Policy
             </a>
             <span className="text-black">•</span>
-            <a href="#" className="hover:text-white transition-colors duration-300">
+            <a href="#" className="hover:text-blue-600 transition-colors duration-300">
               Terms of Service
             </a>
           </div>

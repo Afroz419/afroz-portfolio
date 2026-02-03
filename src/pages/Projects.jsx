@@ -2,25 +2,46 @@ import React from "react";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "ReactJS and Tailwind CSS",
     desc: "A personal portfolio built using React & Tailwind.",
     tags: ["React", "Tailwind", "UI/UX"],
     icon: "💼",
     gradient: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Task Manager App",
+    title: "React Native Projects",
     desc: "A productivity app built using React hooks.",
     tags: ["React", "Hooks", "LocalStorage"],
     icon: "✅",
-    gradient: "from-purple-500 to-pink-500"
+    gradient: "from-blue-500 to-cyan-500"
   },
   {
-    title: "E-Commerce UI",
+    title: "UI/UX Design",
     desc: "A modern online store UI built with Tailwind.",
     tags: ["Tailwind", "UI Design", "Responsive"],
     icon: "🛒",
-    gradient: "from-orange-500 to-red-500"
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Wordpress Projects",
+    desc: "A modern online store UI built with Tailwind.",
+    tags: ["Tailwind", "UI Design", "Responsive"],
+    icon: "🛒",
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Banner and Poster Design",
+    desc: "A modern online store UI built with Tailwind.",
+    tags: ["Tailwind", "UI Design", "Responsive"],
+    icon: "🛒",
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Social Media Handles",
+    desc: "A modern online store UI built with Tailwind.",
+    tags: ["Tailwind", "UI Design", "Responsive"],
+    icon: "🛒",
+    gradient: "from-blue-500 to-cyan-500"
   },
 ];
 
