@@ -2,30 +2,28 @@
 import React from "react";
 import "tailwindcss"
 
-import Header from "./pages/Header";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
 import Footer from "./pages/Footer";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import HomePage from "./components/HomePage";
+import SkillPage from "./components/SkillPage";
+import ProjectPage from "./components/ProjectPage";
+import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar/>
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />}/>
-        <Route path="/projects" element={<Projects />}/>
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/skills" element={<SkillPage />}/>
+        <Route path="/projects" element={<ProjectPage />}/>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
-      <Skills />
-      <Projects />
-      <About />
       <Footer />
     </>
   );
